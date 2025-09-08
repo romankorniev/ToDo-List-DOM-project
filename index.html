@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/gif" href="assests/animated_favicon1.gif" >
+  </head>
+  <body>
+  <div class="tips-overlay hidden" id="overlay">
+    <button id="close_button" class="close_button">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button> 
+    <p>Click on the pencil to hide or show the input area</p>
+    <p>Type text into input area and press enter to add todo to list</p>
+    <p>Hover over the todo and click the trash can to delete</p>
+    <p>Click the clear button to clear all todos from list</p>
+    <p>Click the Save button to save your todos to access them later even if you exit the browser</p>
+  </div>
+    <div id="todo">
+      <h1>MY TO-DO LIST <i id="pencil" class="fas fa-pencil-alt"></i></h1>
+      <input type="text" placeholder="Add New ToDo" class="lists">
+      <div class="app-block">
+        <div id="buttons-filter">
+          <button class="filter all">all</button>
+          <button class="filter active">active</button>
+          <button class="filter performed">performed</button>
+        </div>
+
+        <ul class="toDos">
+          <li><span><i class="fas fa-trash-alt" ></i></span>Купити кавун</li>
+          <li><span><i class="fas fa-trash-alt"></i></span>Купити Kinder Bueno</li>
+          <li><span><i class="fas fa-trash-alt"></i></span>Купити Живчик</li>
+          <li><span><i class="fas fa-trash-alt"></i></span>Поповнити картку моно</li>
+          <li><span><i class="fas fa-trash-alt"></i></span>Доробити стилі CSS</li>
+          <li><span><i class="fas fa-trash-alt"></i></span>Додати функціонал до кнопок all, performed</li>
+          <li><span><i class="fas fa-trash-alt"></i></span>Зробити кнопку Tips</li>
+        </ul>
+
+        <div id="buttons">
+          <button class="save">Save</button>
+          <button class="clear">Clear</button>
+          <button class="tips">Tips</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
